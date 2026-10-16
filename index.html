@@ -223,7 +223,7 @@ footer { margin-top: 60px; border-top: 1px solid var(--line); background: rgba(1
       <div class="cta-row">
         <a class="btn btn-primary" href="https://t.me/perekup5rp_bot" target="_blank" rel="noopener">📨 Открыть в Telegram</a>
         <a class="btn" href="https://proctogad.github.io/perekup-webapp/" target="_blank" rel="noopener">🌐 Веб-версия</a>
-        <a class="btn btn-desk" href="#desk">⬇ Скачать для Windows · v1.0.9</a>
+        <a class="btn btn-desk" href="#desk">⬇ Скачать для Windows · v1.0.10</a>
       </div>
       <div class="cta-note">Телеграм и веб-версия — <b>бесплатно</b> · ПК-приложение <b>55,0 МБ</b>, Windows 10/11 · доступ по ключу из бота</div>
     </div>
@@ -287,7 +287,7 @@ footer { margin-top: 60px; border-top: 1px solid var(--line); background: rgba(1
           <li><span class="n">3</span><span>Нажми «Привязать» — бот подтвердит, и <b>ключ подставится сам</b>: он привязан к железу и не слетает после переустановки Windows</span></li>
         </ol>
         <div class="foot">
-          <a class="btn btn-desk" href="#desk">⬇ Скачать · v1.0.9</a>
+          <a class="btn btn-desk" href="#desk">⬇ Скачать · v1.0.10</a>
           <span class="fine">Windows 10/11 · 55,0 МБ</span>
         </div>
       </div>
@@ -363,7 +363,7 @@ footer { margin-top: 60px; border-top: 1px solid var(--line); background: rgba(1
         <div class="dl-item"><span class="ic">🔗</span><div><b>Общие данные</b>Инвентарь, сделки и статистика синхронизируются с ботом через защищённый мост.</div></div>
       </div>
       <div class="release rv" id="release-card">
-        <div class="ver"><b class="mono" id="rel-ver">v1.0.9</b><span class="pill" style="padding:3px 10px;font-size:11.5px">последний релиз</span></div>
+        <div class="ver"><b class="mono" id="rel-ver">v1.0.10</b><span class="pill" style="padding:3px 10px;font-size:11.5px">последний релиз</span></div>
         <div class="date" id="rel-date">16 октября 2026 · Windows 10/11 · 55,0 МБ</div>
         <ul id="rel-notes">
           <li>Вход по ключу через @perekup5rp_bot — привязка в один клик</li>
@@ -418,7 +418,7 @@ footer { margin-top: 60px; border-top: 1px solid var(--line); background: rgba(1
      const REL = await fetch("https://github.com/proctogad/perekup-webapp/releases/latest/download/latest.json").then(r => r.json());
    latest.json собирается в GitHub Action при публикации релиза и всегда указывает
    на самый свежий exe. Страница перестаёт устаревать. */
-const REL = { version: "v1.0.9", date: "16 октября 2026", size: "55,0 МБ" };
+const REL = { version: "v1.0.10", date: "16 октября 2026", size: "55,0 МБ" };
 (function renderRelease() {
   document.getElementById("rel-ver").textContent = REL.version;
   document.getElementById("rel-date").textContent = REL.date + " · Windows 10/11 · " + REL.size;
