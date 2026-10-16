@@ -222,9 +222,9 @@ footer { margin-top: 60px; border-top: 1px solid var(--line); background: rgba(1
       </p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://t.me/perekup5rp_bot" target="_blank" rel="noopener">📨 Открыть в Telegram</a>
-        <a class="btn btn-desk" href="#desk">⬇ Скачать для Windows · v1.4.2</a>
+        <a class="btn btn-desk" href="#desk">⬇ Скачать для Windows · v1.0.9</a>
       </div>
-      <div class="cta-note">Телеграм — <b>бесплатно</b> · ПК-приложение <b>24,8 МБ</b>, Windows 10/11 · доступ по ключу из бота</div>
+      <div class="cta-note">Телеграм — <b>бесплатно</b> · ПК-приложение <b>55,0 МБ</b>, Windows 10/11 · доступ по ключу из бота</div>
     </div>
     <div class="hero-side">
       <div class="qr-card">
@@ -281,13 +281,13 @@ footer { margin-top: 60px; border-top: 1px solid var(--line); background: rgba(1
       <div class="path rv">
         <div class="ph">🖥 Приложение для ПК</div>
         <ol>
-          <li><span class="n">1</span><span>В боте открой раздел приложения и получи <b>ключ доступа</b></span></li>
-          <li><span class="n">2</span><span>Скачай установщик — <span class="mono">MozilaCalculator.exe</span></span></li>
-          <li><span class="n">3</span><span>Войди по ключу: он привязан к железу и не слетает после переустановки Windows</span></li>
+          <li><span class="n">1</span><span>Запусти приложение — оно покажет <b>код устройства</b></span></li>
+          <li><span class="n">2</span><span>Скачай установщик — <span class="mono">PerekupCalculator_Setup.exe</span></span></li>
+          <li><span class="n">3</span><span>Нажми «Привязать» — бот подтвердит, и <b>ключ подставится сам</b>: он привязан к железу и не слетает после переустановки Windows</span></li>
         </ol>
         <div class="foot">
-          <a class="btn btn-desk" href="#desk">⬇ Скачать · v1.4.2</a>
-          <span class="fine">Windows 10/11 · 24,8 МБ</span>
+          <a class="btn btn-desk" href="#desk">⬇ Скачать · v1.0.9</a>
+          <span class="fine">Windows 10/11 · 55,0 МБ</span>
         </div>
       </div>
     </div>
@@ -362,16 +362,16 @@ footer { margin-top: 60px; border-top: 1px solid var(--line); background: rgba(1
         <div class="dl-item"><span class="ic">🔗</span><div><b>Общие данные</b>Инвентарь, сделки и статистика синхронизируются с ботом через защищённый мост.</div></div>
       </div>
       <div class="release rv" id="release-card">
-        <div class="ver"><b class="mono" id="rel-ver">v1.4.2</b><span class="pill" style="padding:3px 10px;font-size:11.5px">последний релиз</span></div>
-        <div class="date" id="rel-date">12 октября 2026 · Windows 10/11 · 24,8 МБ</div>
+        <div class="ver"><b class="mono" id="rel-ver">v1.0.9</b><span class="pill" style="padding:3px 10px;font-size:11.5px">последний релиз</span></div>
+        <div class="date" id="rel-date">16 октября 2026 · Windows 10/11 · 55,0 МБ</div>
         <ul id="rel-notes">
-          <li>Синхронизация инвентаря между ПК и ботом</li>
-          <li>Исправлен расчёт VIP-сбора при длинной аренде</li>
-          <li>Тёмная тема стала темнее 🌚</li>
+          <li>Вход по ключу через @perekup5rp_bot — привязка в один клик</li>
+          <li>Синхронизация с ботом: инвентарь, сделки, аренда, напоминания</li>
+          <li>P-Coin: баланс и история прямо в приложении</li>
         </ul>
-        <div class="hash mono">sha256: 6f2c 9a1e 77b4 08dd 4c31 a5f0 92e8 13bb …</div>
+        <div class="hash mono">sha256: 908f c869 3812 93e3 8865 6a2f f4c6 0e75 …</div>
         <div class="btns">
-          <a class="btn btn-desk" href="https://github.com/proctogad/perekup-webapp/releases/latest" target="_blank" rel="noopener" id="rel-dl">⬇ Скачать MozilaCalculator.exe</a>
+          <a class="btn btn-desk" href="https://github.com/proctogad/perekup-webapp/releases/latest" target="_blank" rel="noopener" id="rel-dl">⬇ Скачать PerekupCalculator_Setup.exe</a>
           <a class="btn" href="https://github.com/proctogad/perekup-webapp/releases" target="_blank" rel="noopener">Все релизы и изменения</a>
         </div>
       </div>
@@ -417,7 +417,7 @@ footer { margin-top: 60px; border-top: 1px solid var(--line); background: rgba(1
      const REL = await fetch("https://github.com/proctogad/perekup-webapp/releases/latest/download/latest.json").then(r => r.json());
    latest.json собирается в GitHub Action при публикации релиза и всегда указывает
    на самый свежий exe. Страница перестаёт устаревать. */
-const REL = { version: "v1.4.2", date: "12 октября 2026", size: "24,8 МБ" };
+const REL = { version: "v1.0.9", date: "16 октября 2026", size: "55,0 МБ" };
 (function renderRelease() {
   document.getElementById("rel-ver").textContent = REL.version;
   document.getElementById("rel-date").textContent = REL.date + " · Windows 10/11 · " + REL.size;
